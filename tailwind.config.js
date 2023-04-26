@@ -5,7 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "background-1": "url('../public/assets/Bg-1.png')",
+        "nav-color": "rgba(255, 255, 255, 0.04)",
+      },
+    },
   },
   plugins: [],
 };
