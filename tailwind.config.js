@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "background-1": "url('../public/assets/Bg-1.png')",
+        "background-2": "url('../public/assets/background-2.png')",
       },
       colors: {
         "nav-color": "rgba(255, 255, 255, 0.04)",
@@ -21,6 +22,7 @@ module.exports = {
       fontFamily: {
         body: ["Barlow", "sans-serif"],
         con: ["Barlow", "Condensed"],
+        fair: ["Bellefair"],
       },
       screens: {
         "2xl": { max: "1535px" },
