@@ -16,4 +16,15 @@
 
     transition: all 0.3s ease-out;
   }
+  .nav-active:before {
+    content: "";
+    height: 0.2rem;
+    background: #ffffff;
+    width: 80%;
+    display: block;
+
+    position: absolute;
+    bottom: -80%;
+    transition: all 0.3s ease-out;
+  }
 }
