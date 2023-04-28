@@ -7,11 +7,11 @@ interface SpaceData {
   time: string;
 }
 
-/** Dummy user data. */
+/** Dummy space data. */
 export const sampleUserData: SpaceData[] = [
   {
     id: 101,
-    image: "../public/assets/moon.png",
+    image: "/assets/moon.png",
     name: "moon",
     description:
       "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
@@ -20,7 +20,7 @@ export const sampleUserData: SpaceData[] = [
   },
   {
     id: 102,
-    image: "../public/assets/mars.png",
+    image: "/assets/mars.png",
     name: "mars",
     description:
       "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
@@ -29,7 +29,7 @@ export const sampleUserData: SpaceData[] = [
   },
   {
     id: 103,
-    image: "../public/assets/europa.png",
+    image: "/assets/europa.png",
     name: "europa",
     description:
       "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
@@ -38,7 +38,7 @@ export const sampleUserData: SpaceData[] = [
   },
   {
     id: 104,
-    image: "../public/assets/titan.png",
+    image: "/assets/titan.png",
     name: "titan",
     description:
       "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
