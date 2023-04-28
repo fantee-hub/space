@@ -18,7 +18,7 @@ function Nav() {
           <ul className="flex items-center  bg-nav-color backdrop-blur-xs px-5 py-5 tracking-wide justify-center">
             <Link href="/">
               <li
-                className={`pr-10 relative ${
+                className={`mr-10 relative ${
                   pathname === "/" ? "nav-active" : ""
                 }`}
               >
@@ -27,7 +27,7 @@ function Nav() {
             </Link>
             <Link href="/destination">
               <li
-                className={`pr-10 relative ${
+                className={`mr-10 relative ${
                   pathname === "/destination" ? "nav-active" : ""
                 }`}
               >
@@ -36,7 +36,7 @@ function Nav() {
             </Link>
             <Link href="/crew">
               <li
-                className={`pr-10 relative ${
+                className={`mr-10 relative ${
                   pathname === "/crew" ? "nav-active" : ""
                 }`}
               >
