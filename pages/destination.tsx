@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { sampleUserData } from "../utils/sample-data";
-import Image from "next/image";
 
 function Destination() {
   const [toggleTab, setToggleTab] = useState(0);
@@ -27,7 +26,7 @@ function Destination() {
           </p>
         </div>
 
-        <div className="tab-panel flex justify-center gap-[10rem] my-[3rem] max-w-[80rem] mx-auto">
+        <div className="tab-panel flex justify-center gap-[10rem] mt-[2rem] max-w-[80rem] mx-auto">
           <div className="image-panel self-end">
             {data && data.length && (
               <div>
