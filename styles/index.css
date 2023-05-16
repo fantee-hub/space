@@ -22,9 +22,22 @@
     background: #ffffff;
     width: 100%;
     display: block;
-
     position: absolute;
     bottom: -80%;
     transition: all 0.3s ease-out;
+  }
+
+  .crew-container .swiper .swiper-pagination {
+    bottom: 80px;
+
+    left: -490px;
+    width: 100%;
+  }
+  .crew-container .swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+
+    transition: 0.2s;
   }
 }

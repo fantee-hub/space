@@ -19,8 +19,8 @@ function Crew() {
 
   console.log(data);
   return (
-    <div className="bg-background-3 bg-cover bg-no-repeat min-h-screen flex place-items-center w-full">
-      <div className="crew-container w-[100%]">
+    <div className="bg-background-3 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden">
+      <div className="crew-container w-[100%]  mt-[12rem] ">
         <div className="sub-header font-con ml-[10rem]">
           <p className="text-white tracking-[4.725px] text-[20px]">
             <span className="text-white opacity-25">02</span> MEET YOUR CREW
@@ -38,14 +38,24 @@ function Crew() {
             data.length &&
             data.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className="crew-content flex justify-center items-center ">
-                  <div className="txts max-w-[20rem]">
-                    <h2>{data.occupation}</h2>
-                    <h1>{data.name}</h1>
-                    <p>{data.description}</p>
+                <div className="crew-content flex relative gap-[2rem] items-center mx-[10rem]">
+                  <div className="txts max-w-[32rem]">
+                    <h2 className="font-fair text-[24px] text-white opacity-50 uppercase">
+                      {data.occupation}
+                    </h2>
+                    <h1 className="font-fair text-white text-[46px] uppercase">
+                      {data.name}
+                    </h1>
+                    <p className="text-[#D0D6F9] font-body leading-[32px] mt-2">
+                      {data.description}
+                    </p>
                   </div>
-                  <div className="image mt-[8rem]">
-                    <img src={data.image} alt={data.name} />
+                  <div className="image ">
+                    <img
+                      src={data.image}
+                      alt={data.name}
+                      className="h-[80vh] w-[100%] object-contain "
+                    />
                   </div>
                 </div>
               </SwiperSlide>
