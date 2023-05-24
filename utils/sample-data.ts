@@ -12,6 +12,12 @@ interface CrewData {
   name: string;
   description: string;
 }
+interface TechnologyData {
+  header: string;
+  title: string;
+  description: string;
+  image: string;
+}
 
 /** Dummy space data. */
 export const sampleUserData: SpaceData[] = [
@@ -81,5 +87,29 @@ export const crewData: CrewData[] = [
     description:
       "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
     image: "/assets/crew-4.png",
+  },
+];
+
+export const techData: TechnologyData[] = [
+  {
+    header: "THE TERMINOLOGY…",
+    title: "LAUNCH VEHICLE",
+    description:
+      "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+    image: "/assets/tech-1.jpg",
+  },
+  {
+    header: "THE TERMINOLOGY…",
+    title: "SPACEPORT",
+    description:
+      "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
+    image: "/assets/tech-2.jpg",
+  },
+  {
+    header: "THE TERMINOLOGY…",
+    title: "SPACE CAPSULE",
+    description:
+      "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
+    image: "/assets/tech-3.jpg",
   },
 ];
