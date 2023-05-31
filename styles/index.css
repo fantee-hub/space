@@ -16,6 +16,13 @@
 
     transition: all 0.3s ease-out;
   }
+  .tab-panel .tab-active {
+    background-color: #ffffff;
+    color: #0b0d17;
+  }
+  .not-active {
+    background: transparent;
+  }
   .nav-active:before {
     content: "";
     height: 0.2rem;

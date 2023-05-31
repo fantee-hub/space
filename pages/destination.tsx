@@ -17,7 +17,7 @@ function Destination() {
     fetchTabData();
   }, []);
   return (
-    <div className="bg-background-2 bg-cover bg-no-repeat min-h-screen flex place-items-center w-full">
+    <div className="bg-background-2 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden">
       <div className="contents-container  mt-[10rem]  w-full ">
         <div className="sub-header font-con ml-[10rem]">
           <p className="text-white tracking-[4.725px] text-[20px]">
@@ -26,7 +26,7 @@ function Destination() {
           </p>
         </div>
 
-        <div className="tab-panel flex justify-center gap-[10rem] mt-[2rem] max-w-[80rem] mx-auto">
+        <div className="tab-panel flex justify-center gap-[10rem] my-[3rem] max-w-[80rem] mx-auto">
           <div className="image-panel self-end">
             {data && data.length && (
               <div>
