@@ -11,6 +11,7 @@ module.exports = {
         "background-2": "url('../public/assets/background-2.png')",
         "background-3": "url('../public/assets/background-3.png')",
         "background-4": "url('../public/assets/background-4.jpg')",
+        "background-tab-1": "url('../public/assets/bg-tab-1.png')",
       },
       colors: {
         "nav-color": "rgba(255, 255, 255, 0.04)",

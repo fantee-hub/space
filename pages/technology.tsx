@@ -26,7 +26,7 @@ function Technology() {
           </p>
         </div>
         <div className="technology-content flex justify-between items-center ml-[10rem]">
-          <div className="flex gap-6  content">
+          <div className="flex gap-6  content ">
             <div className="tab-panel">
               <div
                 className={` ${
