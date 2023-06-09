@@ -18,20 +18,20 @@ function Technology() {
     fetchTabData();
   }, []);
   return (
-    <div className="bg-background-4 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden">
+    <div className="bg-background-4 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-center">
       <div className="contents-container  mt-[10rem]  w-full ">
-        <div className="sub-header font-con ml-[10rem]">
+        <div className="sub-header font-con ml-[10rem] lg:ml-[3rem] lg:mb-[3rem]">
           <p className="text-white tracking-[4.725px] text-[20px]">
             <span className="text-white opacity-25">03</span> TECHNOLOGY
           </p>
         </div>
-        <div className="technology-content flex justify-between items-center ml-[10rem]">
-          <div className="flex gap-6  content ">
-            <div className="tab-panel">
+        <div className="technology-content flex justify-between items-center ml-[10rem] lg:flex-col-reverse lg:ml-0">
+          <div className="flex gap-6  content lg:flex-col">
+            <div className="tab-panel lg:flex lg:justify-center lg:items-center gap-4 lg:my-5">
               <div
                 className={` ${
                   toggleTab === 0 ? "tab-active" : ""
-                } font-fair w-[60px] h-[60px] rounded-full  flex items-center justify-center text-[20px]  border-solid border border-[#ffffff] tracking-[2px] text-[#ffffff] mb-5 cursor-pointer 
+                } font-fair w-[60px] h-[60px] rounded-full  flex items-center justify-center text-[20px]  border-solid border border-[#ffffff] tracking-[2px] text-[#ffffff] mb-5 cursor-pointer lg:m-0
                 `}
                 onClick={() => updateToggle(0)}
               >
@@ -40,13 +40,13 @@ function Technology() {
               <div
                 className={` ${
                   toggleTab === 1 ? "tab-active" : ""
-                } font-fair w-[60px] h-[60px] rounded-full bg-transparent flex items-center justify-center text-[20px] tracking-[2px] text-[#ffffff] border-solid border border-[#ffffff] mb-5 cursor-pointer `}
+                } font-fair w-[60px] h-[60px] rounded-full bg-transparent flex items-center justify-center text-[20px] tracking-[2px] text-[#ffffff] border-solid border border-[#ffffff] mb-5 cursor-pointer lg:m-0`}
                 onClick={() => updateToggle(1)}
               >
                 2
               </div>
               <div
-                className={`font-fair w-[60px] h-[60px] rounded-full bg-transparent flex items-center justify-center text-[20px] tracking-[2px] text-[#ffffff] border-solid border border-[#ffffff] cursor-pointer ${
+                className={`font-fair w-[60px] h-[60px] rounded-full bg-transparent flex items-center justify-center text-[20px] tracking-[2px] text-[#ffffff] border-solid border border-[#ffffff] cursor-pointer lg:m-0 ${
                   toggleTab === 2 ? "tab-active" : "not-active"
                 }`}
                 onClick={() => updateToggle(2)}
@@ -70,13 +70,24 @@ function Technology() {
               )}
             </div>
           </div>
-          <div className="images">
+          <div className="images lg:hidden">
             {data && data.length && (
               <>
                 <img
                   src={data[toggleTab].image}
                   alt={data[toggleTab].title}
                   className="w-[400px] h-[400px] object-contain"
+                />
+              </>
+            )}
+          </div>
+          <div className="images lgg:hidden">
+            {data && data.length && (
+              <>
+                <img
+                  src={data[toggleTab].imageMobile}
+                  alt={data[toggleTab].title}
+                  className="w-[400px] h-[400px] object-contain lg:w-[100vw]"
                 />
               </>
             )}

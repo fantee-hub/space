@@ -17,17 +17,17 @@ function Destination() {
     fetchTabData();
   }, []);
   return (
-    <div className="bg-background-2 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden">
+    <div className="bg-background-2 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-start">
       <div className="contents-container  mt-[10rem]  w-full ">
-        <div className="sub-header font-con ml-[10rem]">
+        <div className="sub-header font-con ml-[10rem] lg:ml-[3rem] ">
           <p className="text-white tracking-[4.725px] text-[20px]">
             <span className="text-white opacity-25">01</span> PICK YOUR
             DESTINATION
           </p>
         </div>
 
-        <div className="tab-panel flex justify-center gap-[10rem] my-[3rem] max-w-[80rem] mx-auto">
-          <div className="image-panel self-end">
+        <div className="tab-panel flex justify-center gap-[10rem] my-[3rem] max-w-[80rem] mx-auto lg:flex-col lg:justify-center lg:gap-[3rem]">
+          <div className="image-panel self-end lg:self-center lg:mt-[2rem]">
             {data && data.length && (
               <div>
                 <img
@@ -38,13 +38,13 @@ function Destination() {
               </div>
             )}
           </div>
-          <div className="content-container max-w-[25rem] ">
+          <div className="content-container max-w-[25rem] lg:mx-auto lg:max-w-[35rem] lg:text-center">
             <div className="tab-container ">
-              <ul className="flex text-[#D0D6F9] relative ">
+              <ul className="flex text-[#D0D6F9] relative lg:justify-center">
                 <li
                   className={`tabs ${
                     toggleTab === 0 ? "active" : ""
-                  } pr-[1.5rem] cursor-pointer`}
+                  } pr-[1.5rem] lg:pr-[2rem] cursor-pointer`}
                   onClick={() => updateToggle(0)}
                 >
                   MOON
@@ -52,7 +52,7 @@ function Destination() {
                 <li
                   className={` tabs ${
                     toggleTab === 1 ? "active" : ""
-                  } pr-[1.5rem] cursor-pointer`}
+                  } pr-[1.5rem] lg:pr-[2rem] cursor-pointer`}
                   onClick={() => updateToggle(1)}
                 >
                   MARS
@@ -60,7 +60,7 @@ function Destination() {
                 <li
                   className={` tabs ${
                     toggleTab === 2 ? "active" : ""
-                  } pr-[1.5rem] cursor-pointer`}
+                  } pr-[1.5rem] lg:pr-[2rem] cursor-pointer`}
                   onClick={() => updateToggle(2)}
                 >
                   EUROPA
@@ -68,7 +68,7 @@ function Destination() {
                 <li
                   className={`tabs  ${
                     toggleTab === 3 ? "active" : ""
-                  }  cursor-pointer`}
+                  } cursor-pointer`}
                   onClick={() => updateToggle(3)}
                 >
                   TITAN
@@ -86,7 +86,7 @@ function Destination() {
                     <p>{data[toggleTab].description}</p>
                   </div>
                   <div className="w-full bg-white opacity-25 h-px mt-[2.2rem]"></div>
-                  <div className="distance-container flex gap-[3rem] mt-[1rem]">
+                  <div className="distance-container flex gap-[3rem] mt-[1rem] lg:justify-center">
                     <div className="avg-distance">
                       <div className="header text-[#D0D6F9] text-[12px] tracking-[2.3625px]">
                         <p>AVG. DISTANCE</p>

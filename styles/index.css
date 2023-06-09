@@ -33,6 +33,11 @@
     bottom: -80%;
     transition: all 0.3s ease-out;
   }
+  @media screen and (max-width: 1023px) {
+    .nav-active:before {
+      bottom: -40%;
+    }
+  }
 
   .crew-container .swiper .swiper-pagination {
     bottom: 80px;
@@ -46,5 +51,16 @@
     background-color: #ffffff;
 
     transition: 0.2s;
+  }
+  @media screen and (max-width: 1023px) {
+    .crew-container .swiper .swiper-pagination {
+      bottom: 80px;
+      top: 310px;
+      left: -10px;
+      width: 100%;
+    }
+    .crew-container .swiper .swiper-pagination {
+      z-index: -1;
+    }
   }
 }

@@ -19,9 +19,9 @@ function Crew() {
 
   console.log(data);
   return (
-    <div className="bg-background-3 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden">
-      <div className="crew-container w-[100%]  mt-[12rem] ">
-        <div className="sub-header font-con ml-[10rem]">
+    <div className="bg-background-3 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-start">
+      <div className="crew-container w-[100%]  mt-[12rem] lg:mt-[10rem]">
+        <div className="sub-header font-con ml-[10rem] lg:ml-[3rem]">
           <p className="text-white tracking-[4.725px] text-[20px]">
             <span className="text-white opacity-25">02</span> MEET YOUR CREW
           </p>
@@ -38,8 +38,8 @@ function Crew() {
             data.length &&
             data.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className="crew-content flex relative gap-[2rem] items-center mx-[10rem]">
-                  <div className="txts max-w-[32rem]">
+                <div className="crew-content flex gap-[2rem] items-center mx-[10rem] lg:flex-col lg:mt-12">
+                  <div className="txts max-w-[32rem] lg:text-center relative">
                     <h2 className="font-fair text-[24px] text-white opacity-50 uppercase">
                       {data.occupation}
                     </h2>
@@ -50,7 +50,7 @@ function Crew() {
                       {data.description}
                     </p>
                   </div>
-                  <div className="image ">
+                  <div className="image lg:mt-[3rem]">
                     <img
                       src={data.image}
                       alt={data.name}
