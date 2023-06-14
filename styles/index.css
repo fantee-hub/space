@@ -33,6 +33,10 @@
     bottom: -80%;
     transition: all 0.3s ease-out;
   }
+  .nav-contents.active {
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
   @media screen and (max-width: 1023px) {
     .nav-active:before {
       bottom: -40%;
