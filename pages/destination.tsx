@@ -17,10 +17,10 @@ function Destination() {
     fetchTabData();
   }, []);
   return (
-    <div className="bg-background-2 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-start">
+    <div className="bg-background-2 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-start lg:overflow-auto">
       <div className="contents-container  mt-[10rem]  w-full ">
-        <div className="sub-header font-con ml-[10rem] lg:ml-[3rem] ">
-          <p className="text-white tracking-[4.725px] text-[20px]">
+        <div className="sub-header font-con ml-[10rem] sm:m-0 mdd:ml-[3rem] sm:text-center">
+          <p className="text-white tracking-[4.725px] text-[20px] sm:text-[16px]">
             <span className="text-white opacity-25">01</span> PICK YOUR
             DESTINATION
           </p>
@@ -33,7 +33,7 @@ function Destination() {
                 <img
                   src={data[toggleTab].image}
                   alt={data[toggleTab].name}
-                  className="w-[300px] h-[300px] object-contain"
+                  className="w-[300px] h-[300px] object-contain sm:w-[170px] sm:h-[170px]"
                 />
               </div>
             )}
@@ -76,22 +76,22 @@ function Destination() {
               </ul>
             </div>
 
-            <div className="tab-content">
+            <div className="tab-content sm:px-4">
               {data && data.length && (
                 <>
-                  <div className="title uppercase font-fair text-white text-[80px] mt-2">
+                  <div className="title uppercase font-fair text-white text-[80px] mt-2 sm:text-[56px] sm:pt-4">
                     <h1>{data[toggleTab].name}</h1>
                   </div>
                   <div className="details font-body text-[#D0D6F9]">
                     <p>{data[toggleTab].description}</p>
                   </div>
                   <div className="w-full bg-white opacity-25 h-px mt-[2.2rem]"></div>
-                  <div className="distance-container flex gap-[3rem] mt-[1rem] lg:justify-center">
+                  <div className="distance-container flex gap-[3rem] mt-[1rem] lg:justify-center sm: flex-col">
                     <div className="avg-distance">
                       <div className="header text-[#D0D6F9] text-[12px] tracking-[2.3625px]">
                         <p>AVG. DISTANCE</p>
                       </div>
-                      <div className="txt text-white uppercase text-[20px]">
+                      <div className="txt text-white uppercase text-[20px] sm:text-[26px]">
                         <p>{data[toggleTab].distance}</p>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ function Destination() {
                       <div className="header text-[#D0D6F9] text-[12px] tracking-[2.3625px]">
                         <p>EST. TRAVEL TIME</p>
                       </div>
-                      <div className="txt text-white uppercase text-[20px]">
+                      <div className="txt text-white uppercase text-[20px] sm:text-[26px]">
                         <p>{data[toggleTab].time}</p>
                       </div>
                     </div>
