@@ -78,4 +78,15 @@
       z-index: -1;
     }
   }
+  @media screen and (max-width: 763px) {
+    .crew-container .swiper .swiper-pagination {
+      bottom: 80px;
+      top: 310px;
+      left: -2px;
+      width: 100%;
+    }
+    .crew-container .swiper .swiper-pagination {
+      z-index: -1;
+    }
+  }
 }

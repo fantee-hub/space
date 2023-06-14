@@ -17,7 +17,7 @@ function Destination() {
     fetchTabData();
   }, []);
   return (
-    <div className="bg-background-2 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-start lg:overflow-auto">
+    <div className="bg-background-2 bg-cover bg-no-repeat h-screen flex place-items-center w-full  lg:items-start sm:h-auto">
       <div className="contents-container  mt-[10rem]  w-full ">
         <div className="sub-header font-con ml-[10rem] sm:m-0 mdd:ml-[3rem] sm:text-center">
           <p className="text-white tracking-[4.725px] text-[20px] sm:text-[16px]">

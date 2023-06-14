@@ -18,16 +18,16 @@ function Technology() {
     fetchTabData();
   }, []);
   return (
-    <div className="bg-background-4 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-center lg:overflow-y-auto">
+    <div className="bg-background-4 bg-cover bg-no-repeat h-screen flex place-items-center w-full  lg:items-center sm:overflow-auto">
       <div className="contents-container  mt-[10rem]  w-full ">
-        <div className="sub-header font-con ml-[10rem] lg:ml-[3rem] lg:mb-[3rem]">
+        <div className="sub-header font-con ml-[10rem] mdd:ml-[3rem] lg:mb-[3rem] sm:ml-0 lg:mt-[6rem] sm:text-center">
           <p className="text-white tracking-[4.725px] text-[20px]">
-            <span className="text-white opacity-25">03</span> TECHNOLOGY
+            <span className="text-white opacity-25">03</span> SPACE LAUNCH 101
           </p>
         </div>
         <div className="technology-content flex justify-between items-center ml-[10rem] lg:flex-col-reverse lg:ml-0">
           <div className="flex gap-6  content lg:flex-col">
-            <div className="tab-panel lg:flex lg:justify-center lg:items-center gap-4 lg:my-5">
+            <div className="tab-panel lg:flex lg:justify-center lg:items-center gap-4 mdd:my-5 sm:mt-[50px]">
               <div
                 className={` ${
                   toggleTab === 0 ? "tab-active" : ""
@@ -54,13 +54,13 @@ function Technology() {
                 3
               </div>
             </div>
-            <div className="main-content max-w-[30rem] lg:text-center"> 
+            <div className="main-content max-w-[30rem] lg:text-center sm:px-4 sm:pb-[50px]">
               {data && data.length && (
                 <>
                   <h2 className="font-fair text-[16px] text-white opacity-50 uppercase">
                     {data[toggleTab].header}
                   </h2>
-                  <h1 className="font-fair text-white text-[46px] uppercase">
+                  <h1 className="font-fair text-white text-[46px] uppercase sm:text-[24px]">
                     {data[toggleTab].title}
                   </h1>
                   <p className="text-[#D0D6F9] font-body leading-[32px] mt-2">
@@ -87,7 +87,7 @@ function Technology() {
                 <img
                   src={data[toggleTab].imageMobile}
                   alt={data[toggleTab].title}
-                  className="w-[400px] h-[400px] object-contain lg:w-[100vw]"
+                  className="w-[400px] h-[400px] object-contain lg:w-[100vw] lg:h-[170px] lg:object-cover"
                 />
               </>
             )}
