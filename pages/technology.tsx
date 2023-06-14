@@ -18,7 +18,7 @@ function Technology() {
     fetchTabData();
   }, []);
   return (
-    <div className="bg-background-4 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-center">
+    <div className="bg-background-4 bg-cover bg-no-repeat h-screen flex place-items-center w-full overflow-hidden lg:items-center lg:overflow-y-auto">
       <div className="contents-container  mt-[10rem]  w-full ">
         <div className="sub-header font-con ml-[10rem] lg:ml-[3rem] lg:mb-[3rem]">
           <p className="text-white tracking-[4.725px] text-[20px]">
@@ -54,7 +54,7 @@ function Technology() {
                 3
               </div>
             </div>
-            <div className="main-content max-w-[30rem]">
+            <div className="main-content max-w-[30rem] lg:text-center"> 
               {data && data.length && (
                 <>
                   <h2 className="font-fair text-[16px] text-white opacity-50 uppercase">
