@@ -23,6 +23,17 @@
   .not-active {
     background: transparent;
   }
+  .mobileNav-active:before {
+    content: "";
+    height: 31px;
+    background: #ffffff;
+    width: 4px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    transition: all 0.3s ease-out;
+  }
   .nav-active:before {
     content: "";
     height: 0.2rem;

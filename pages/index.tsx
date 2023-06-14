@@ -17,7 +17,7 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
-      <div className="col self-end lg:self-center lg:mt-[10rem]">
+      <div className="col self-end lg:self-center lg:mt-[10rem] lg:mb-[5rem]">
         <div className="font-fair w-[200px] h-[200px] rounded-full bg-white flex items-center justify-center text-[20px] tracking-[2px] text-[#0B0D17]">
           <h1>EXPLORE</h1>
         </div>

@@ -85,38 +85,38 @@ function Nav() {
             <ul className=" text-white pl-[32px]">
               <Link href="/">
                 <li
-                  className={`mr-10 lg:py-4 relative ${
-                    pathname === "/" ? "nav-active" : ""
+                  className={`lg:py-4 relative ${
+                    pathname === "/" ? "mobileNav-active" : ""
                   }`}
                 >
-                  <span className="font-bold lg:hidden">00</span> HOME
+                  <span className="font-bold pr-3">00</span> HOME
                 </li>
               </Link>
               <Link href="/destination">
                 <li
-                  className={`mr-10 lg:py-4 relative ${
-                    pathname === "/destination" ? "nav-active" : ""
+                  className={`lg:py-4 relative ${
+                    pathname === "/destination" ? "mobileNav-active" : ""
                   }`}
                 >
-                  <span className="font-bold lg:hidden">01</span> DESTINATION
+                  <span className="font-bold pr-3">01</span> DESTINATION
                 </li>
               </Link>
               <Link href="/crew">
                 <li
-                  className={`mr-10 lg:py-4 relative ${
-                    pathname === "/crew" ? "nav-active" : ""
+                  className={`lg:py-4 relative ${
+                    pathname === "/crew" ? "mobileNav-active" : ""
                   }`}
                 >
-                  <span className="font-bold lg:hidden">02</span> CREW
+                  <span className="font-bold pr-3">02</span> CREW
                 </li>
               </Link>
               <Link href="/technology">
                 <li
                   className={`relative lg:py-4 ${
-                    pathname === "/technology" ? "nav-active" : ""
+                    pathname === "/technology" ? "mobileNav-active" : ""
                   }`}
                 >
-                  <span className="font-bold lg:hidden">03</span> TECHNOLOGY
+                  <span className="font-bold pr-3">03</span> TECHNOLOGY
                 </li>
               </Link>
             </ul>
