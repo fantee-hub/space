@@ -88,6 +88,7 @@ function Nav() {
                   className={`lg:py-4 relative ${
                     pathname === "/" ? "mobileNav-active" : ""
                   }`}
+                  onClick={closeHandler}
                 >
                   <span className="font-bold pr-3">00</span> HOME
                 </li>
@@ -97,6 +98,7 @@ function Nav() {
                   className={`lg:py-4 relative ${
                     pathname === "/destination" ? "mobileNav-active" : ""
                   }`}
+                  onClick={closeHandler}
                 >
                   <span className="font-bold pr-3">01</span> DESTINATION
                 </li>
@@ -106,6 +108,7 @@ function Nav() {
                   className={`lg:py-4 relative ${
                     pathname === "/crew" ? "mobileNav-active" : ""
                   }`}
+                  onClick={closeHandler}
                 >
                   <span className="font-bold pr-3">02</span> CREW
                 </li>
@@ -115,6 +118,7 @@ function Nav() {
                   className={`relative lg:py-4 ${
                     pathname === "/technology" ? "mobileNav-active" : ""
                   }`}
+                  onClick={closeHandler}
                 >
                   <span className="font-bold pr-3">03</span> TECHNOLOGY
                 </li>
